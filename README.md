@@ -68,3 +68,46 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+const resturantData=[
+	{
+		imgUrl:"hsgsjkh",
+		title:"Chinese Wok",
+		starRating:"4.5",
+		delivery:"30-40min",
+		cuisines:"Chinese,Asian,Tibetan,Desert",
+		location:"Dadar west"
+	},
+	{
+     imgUrl:"https://images.app.goo.gl/4MukP4pdAWYLKkzf7",
+      title : "Hotel Manpasand",
+      starRating : "4.5",
+      deliveryTime : "30-40",
+      cuisines : "Puranpoli,matan thali, Chicken thali, paneer tika",
+      location : "Ghansoli, Navi Mumbai" 
+    },
+    {
+      imgUrl : " https://www.zomato.com/mumbai/urban-tadka-1-kandivali-east",
+      title : "Urban Tadka",
+      starRating : "4.5",
+      deliveryTime : "40-45",
+      cuisines : "Urban Tadka, Mughalai Biryani",
+      location : "North India"
+    },
+    {
+      imgUrl :"https://i.ytimg.com/vi/6E0QFJ3g1Yw/maxresdefault.jpg",
+      title : "Aapla Dhaba",
+      starRating : "4.9",
+      deliveryTime : "30-35",
+      cuisines : "South Indian, Asian, Tibetan, Chinese",
+      location : "Ghatkopar West"
+    },
+	{
+	imgUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_qrK7sIJh2VaanAlPe1eB89Z68bK9ZUMleA&usqp=CAU",
+	title : "american dhaba",
+	starrating :"5",
+	cusines : "America, western, Indian",
+	location: "tank road"
+	}
+		];

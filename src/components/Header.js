@@ -6,31 +6,26 @@ import { MdHelpCenter } from "react-icons/md";
 const header =() =>{
 	return(
 		<>
-		<nav className="navbar navbar-expand-sm sticky navbar-light bg-light shadow-xl">
-  <div className="container-fluid">
-    <i>
-   <SiIfood fontSize={50} />
+		<nav className="navbar navbar-expand-sm sticky navbar-light bg-light shadow-xl  ">
+  <div className="container-fluid ">
+    <i className="font-bold ml-4">
+   <SiIfood fontSize={80} />
    FKK</i>
-   	<ul className="nav ">
-  <li className="nav-item ">
-    <a className="nav-link inline" href="#">
-    <IoHome />
-    Home</a>
+   	<ul className=" bar flex gap-8 font-bold mr-8">
+    <li className="flex">
+    🔍Search
   </li>
-  <li className="nav-item">
-    <a className="nav-link" href="#">
-    <FcContacts/>
-    Contact Us</a>
+  <li className="flex  ">
+    🏠Home
   </li>
-  <li className="nav-item">
-    <a className="nav-link" href="#">
- <CiShoppingCart/>
-    Cart</a>
+  <li className="flex">
+    📞Contact Us
   </li>
-  <li className="nav-item">
-    <a className="nav-link " href="#">
- <MdHelpCenter/>
-    Help</a>
+  <li className="flex">
+    🛒Cart
+  </li>
+  <li className="flex">
+    🤙Help
   </li>
 </ul>
 

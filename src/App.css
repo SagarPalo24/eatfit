@@ -2,6 +2,7 @@
 .custom-card{
 		width:80%;
 		max-width: 230px;
+		word-spacing:normal;
 }
 
 .custom-card img{
@@ -13,3 +14,23 @@
 .custom-card:hover  {
 	width: 150px;
 }
+
+/* .bar{
+	li:link {
+  color: green;
+}
+
+visited link 
+li:visited {
+  color: green;
+}
+
+ mouse over link 
+li:hover {
+  color: red;
+}
+
+selected link 
+li:active {
+  color: yellow;
+} */
