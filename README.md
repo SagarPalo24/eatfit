@@ -111,3 +111,14 @@ const resturantData=[
 	location: "tank road"
 	}
 		];
+
+
+
+<Restaurantcard 
+                                cloudinaryImageId={IMG_URL+restaurant?.info.cloudinaryImageId}
+                                name={restaurant?.info.name}
+                                avgRating={restaurant?.info.avgRating}
+                                deliveryTime={restaurant?.info.sla.deliveryTime}
+                                cuisines={restaurant?.info.cuisines.join(", ")}
+                                areaName={restaurant?.info.areaName}
+                            /> 
