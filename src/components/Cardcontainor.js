@@ -13,7 +13,7 @@ const Cardcontainor =() =>{
                 return(
                        <Restaurantcard
                         key={restaurant?.info.id}
-                                {...restaurant?.info}
+                        {...restaurant?.info}
                        />
                     )
             })
