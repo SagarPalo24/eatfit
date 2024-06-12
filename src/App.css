@@ -1,4 +1,11 @@
 
+.header{
+	height: 70px;
+}
+.icon{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
 .custom-card{
 		width:80%;
 		max-width: 230px;
@@ -12,10 +19,28 @@
 }
 
 .custom-card:hover  {
-	width: 150px;
+	width: 200px;
 }
 
 .custom_input{
 	width: 100%;
 	max-width: 300px;
+}
+
+.shimmerLine{
+	height: 10px;
+	background-color: lightgrey;
+}
+
+.shimmerImg{
+	width: 100%;
+	aspect-ratio: 4/4;
+	border-radius: 20px;
+	background-color:lightgrey;
+}
+
+.shimmerLine2{
+	height: 10px;
+	width: 30px;
+	background-color: lightgrey;
 }
