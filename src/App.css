@@ -1,27 +1,28 @@
 .header{
 	height: 60px;
 }
+
 .icon{
 	height: 70px;
 	width: 180px;
 }
 .custom-card{
-		width:75%;
+		width:85%;
 		height: 100%;
 		max-width: 230px;
 		word-spacing:normal;
 		overflow: hidden;
 		cursor: pointer;
+
 }
 
 .custom-card img{
-		width: 100%;
-		aspect-ratio: 4/4;
+		aspect-ratio: 2/2;
 		border-radius: 20px;
 }
 
 .custom-card:hover  {
-	width: 160px;
+	width: 80%;
 
 }
 .name{

@@ -41,7 +41,7 @@ useEffect(()=>{
 
 if (loading){
     return(
-    <div className="container grid grid-cols-5 ">
+    <div className="container grid grid-cols-4 ">
     <Shimmar/>
     </div>
     )
@@ -62,7 +62,7 @@ if (loading){
             </div>
             </div>
             <hr className="container"/>
-            <div className="container grid grid-cols-5">
+            <div className="container grid grid-cols-4">
                 {
                     restaurantData.map((restaurant) =>{
                     return(

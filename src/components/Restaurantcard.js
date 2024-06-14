@@ -4,7 +4,7 @@ import {IMG_URL} from "../const/config";
 const Resturantcard =({cloudinaryImageId,name,avgRating,sla,cuisines,areaName})  =>{
 	return(
 		<div className="custom-card mb-3 scale-100 ">
-			<div className="mb-2"> 
+			<div className="mb-2 hover:shadow-blue-500/100"> 
 				<img src={IMG_URL+cloudinaryImageId}/>
 			</div>
 			<div className="px-2">
