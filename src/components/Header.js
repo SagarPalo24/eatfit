@@ -1,26 +1,30 @@
-import { SiIfood } from "react-icons/si";
-import { IoHome } from "react-icons/io5";
-import { FcContacts } from "react-icons/fc";
-import { CiShoppingCart } from "react-icons/ci";
-import { MdHelpCenter } from "react-icons/md";
+import { MdOutlineAddHome } from "react-icons/md";
+import { IoIosContact } from "react-icons/io";
+import { MdOutlineAddIcCall } from "react-icons/md";
+import { IoCartOutline } from "react-icons/io5";
+
+
 const header =() =>{
 	return(
 		<>
-		<nav className="navbar  navbar-light bg-light shadow-xl  ">
+		<nav className="navbar navbar-light bg-light shadow-xl  ">
   <div className="container header">
-    <div className="icon">🍔</div>
-   	<ul className=" bar flex gap-6 font-bold mr-10">
-  <li className="flex  ">
-    🏠Home
+    <div >
+    <img className="icon" src="https://5.imimg.com/data5/SELLER/Default/2021/6/OJ/KJ/YX/6767130/smart-restaurant-software-500x500.png" width="100px"/>
+    </div>
+   	<ul className=" bar d-flex gap-6 font-semibold ">
+  <li className="flex gap-1" >
+    <MdOutlineAddHome size={20}/>Home 
+  </li>
+
+  <li className="flex">
+    < IoIosContact size={20}/> About
   </li>
   <li className="flex">
-    🤙About
+    <MdOutlineAddIcCall size={20}/>Contact Us
   </li>
-  <li className="flex">
-    📞Contact Us
-  </li>
-  <li className="flex">
-    🛒Cart
+  <li className="flex ">
+    <IoCartOutline size={20}/>Cart<sub>0</sub>
   </li>
 </ul>
 

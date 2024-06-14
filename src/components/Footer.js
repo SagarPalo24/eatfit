@@ -6,52 +6,22 @@ import { AiOutlineFacebook } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa6";
 const footer =() =>{
 	return(
-		<div className="p-3 bg-dark text-light"> 
-		<SiIfood fontSize={50} /> 
-		<p>FOODIES KA KHAZANA </p>
-		<MdAddLocationAlt />
-		<span> Ghatkopar(East)</span>
-		<p>Mumbai-4000075</p>
-		< div className="flex">
-		<ul className="  bg-dark">
-	<MdAddLocationAlt />
-  <li>Thane</li>
-  <li >Mumbai</li>
-  <li >Nashik</li>
-  <li >Pune</li>
-</ul>
-
-<ul className="  bg-dark">
-<MdAddLocationAlt />
-  <li >Kannur</li>
-  <li >Kollam</li>
-  <li >]Kochi</li>
-  <li >Kozhikode</li>
-</ul>
-
-<ul className="  bg-dark">
-<MdAddLocationAlt />
-  <li >Bhubaneshwar</li>
-  <li >Puri</li>
-  <li >Samblapur</li>
-  <li >Cuttack</li>
-</ul>
-
-<ul className="  bg-dark">
-<MdAddLocationAlt />
-  <li >Ahmedabad</li>
-  <li >Surat</li>
-  <li >Vadodara</li>
-  <li >Rajkot</li>
-</ul>
-</div>
-< div className="flex justify-center p-3 mg-10">
+   <div className="footer">
+   <div className="container text-light" >
+    <img className="icon" src="https://5.imimg.com/data5/SELLER/Default/2021/6/OJ/KJ/YX/6767130/smart-restaurant-software-500x500.png" width="100px"/>
+    <h3 className="font-bold text-size-30px ">Smart Restaurant</h3>
+    <p>Designed for Quality</p>
+    </div>
+    <div className="p-3 text-light container "> 
+    
+< div className="d-flex justify-center gap-3 ">
 < FaInstagramSquare fontSize={50}/>
 <BsWhatsapp fontSize={50}/>
 < AiOutlineFacebook fontSize={50} />
 < FaGithub fontSize={50} />
 </div>
-		</div>
+    </div>
+    </div>
 		)
 }
 

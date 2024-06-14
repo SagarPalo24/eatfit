@@ -122,3 +122,55 @@ const resturantData=[
                                 cuisines={restaurant?.info.cuisines.join(", ")}
                                 areaName={restaurant?.info.areaName}
                             /> 
+
+
+
+
+footer=
+ <div className="bg-dark">
+    <div className="p-3 text-light container "> 
+    <SiIfood fontSize={50} /> 
+    <p>FOODIES KA KHAZANA </p>
+    <MdAddLocationAlt />
+    <span> Ghatkopar(East)</span>
+    <p>Mumbai-4000075</p>
+    < div className="d-flex gap-15 grid grid-cols-5">
+    <ul className="bg-dark ">
+  <li className="d-flex "><MdAddLocationAlt />Thane</li>
+  <li className="d-flex"><MdAddLocationAlt />Mumbai</li>
+  <li className="d-flex"><MdAddLocationAlt />Nashik</li>
+  <li className="d-flex"><MdAddLocationAlt />Pune</li>
+</ul>
+
+<ul className="  bg-dark">
+<MdAddLocationAlt />
+  <li >Kannur</li>
+  <li >Kollam</li>
+  <li >]Kochi</li>
+  <li >Kozhikode</li>
+</ul>
+
+<ul className="  bg-dark">
+<MdAddLocationAlt />
+  <li >Bhubaneshwar</li>
+  <li >Puri</li>
+  <li >Samblapur</li>
+  <li >Cuttack</li>
+</ul>
+
+<ul className="  bg-dark">
+<MdAddLocationAlt />
+  <li >Ahmedabad</li>
+  <li >Surat</li>
+  <li >Vadodara</li>
+  <li >Rajkot</li>
+</ul>
+</div>
+< div className="flex justify-center p-3 mg-10">
+< FaInstagramSquare fontSize={50}/>
+<BsWhatsapp fontSize={50}/>
+< AiOutlineFacebook fontSize={50} />
+< FaGithub fontSize={50} />
+</div>
+    </div>
+    </div>

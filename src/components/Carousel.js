@@ -1,6 +1,9 @@
 const Carousel =() =>{
 	return(
-		<div className="text-center" > this is my project</div>
+		<div className="text-center container" > 
+		this is my project
+		<hr/>
+		</div>
 		);
 };
 

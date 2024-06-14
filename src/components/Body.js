@@ -6,7 +6,10 @@ import Cardcontainor from "./Cardcontainor"
 const body =() =>{
 	return(
 		<>
-		<div className="text-center">this is body component</div>
+		<div className="container mt-3">
+		<h2>What's in Your Mind?</h2>
+		<hr/>
+		</div>
 		<Carousel/>
 		<div className ="d-flex justify-content-between">
 		<Filter/>

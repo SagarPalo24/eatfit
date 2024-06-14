@@ -1,15 +1,17 @@
-
 .header{
-	height: 70px;
+	height: 60px;
 }
 .icon{
-	font-size: 50px;
-	margin-bottom: 20px;
+	height: 70px;
+	width: 180px;
 }
 .custom-card{
-		width:80%;
+		width:75%;
+		height: 100%;
 		max-width: 230px;
 		word-spacing:normal;
+		overflow: hidden;
+		cursor: pointer;
 }
 
 .custom-card img{
@@ -19,12 +21,36 @@
 }
 
 .custom-card:hover  {
-	width: 200px;
+	width: 160px;
+
+}
+.name{
+	    overflow: hidden;
+		display: -webkit-box;
+    	overflow-wrap: break-word;
+		-webkit-line-clamp: 1;
+    	-webkit-box-orient: vertical;
+}
+.cuisines{
+	    overflow: hidden;
+		display: -webkit-box;
+    	overflow-wrap: break-word;
+		-webkit-line-clamp: 1;
+    	-webkit-box-orient: vertical;
+}
+.location{
+	    overflow: hidden;
+		display: -webkit-box;
+    	overflow-wrap: break-word;
+		-webkit-line-clamp: 1;
+    	-webkit-box-orient: vertical;
 }
 
 .custom_input{
-	width: 100%;
-	max-width: 300px;
+	width: 400px;
+	border: none;
+	border-radius: 20px;
+	height: 25px;
 }
 
 .shimmerLine{
@@ -43,4 +69,8 @@
 	height: 10px;
 	width: 30px;
 	background-color: lightgrey;
+}
+
+.footer{
+	background-color: black;
 }
