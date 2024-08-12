@@ -115,12 +115,12 @@ const resturantData=[
 
 
 <Restaurantcard 
-                                cloudinaryImageId={IMG_URL+restaurant?.info.cloudinaryImageId}
-                                name={restaurant?.info.name}
-                                avgRating={restaurant?.info.avgRating}
-                                deliveryTime={restaurant?.info.sla.deliveryTime}
-                                cuisines={restaurant?.info.cuisines.join(", ")}
-                                areaName={restaurant?.info.areaName}
+cloudinaryImageId={IMG_URL+restaurant?.info.cloudinaryImageId}
+name={restaurant?.info.name}
+avgRating={restaurant?.info.avgRating}
+deliveryTime={restaurant?.info.sla.deliveryTime}
+cuisines={restaurant?.info.cuisines.join(", ")}
+areaName={restaurant?.info.areaName}
                             /> 
 
 
@@ -174,3 +174,100 @@ footer=
 </div>
     </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+menu.js 
+import { useParams } from "react-router-dom"
+import { menuUrl } from "../const/config"
+import { useEffect }from "react"
+
+const Menu=() => {
+  const params = useParams();
+  console.log("Params", params)
+useEffect(()=>{
+const getRestaurants = async() => {
+  try{
+  const data = await fetch (menuUrl);
+  const json = await data.json();
+  // setLoading(false);
+  console.log("json",json)
+  // setRestaurantData(json?.data?.cards[1]?.card?.card?.gridElements?.infowithstyle?.restaurants);
+  // setRestaurantCollection(json?.data?.cards[1]?.card?.card?.gridElements?.infowithStyle?.restaurants);
+  }
+  catch(error) {
+  // setLoading(false)
+  // setFailedState(true);
+
+  }
+  }
+  getRestaurants();
+
+  },[])
+return(
+<div>
+</div>
+)
+
+}
+
+
+
+
+         <MenuSection
+          isVeg={normalCategory?.card?.card?.itemCards[0]?.card?.card?.info?.isVeg} 
+          name={normalCategory?.card?.card?.itemCards[0]?.card?.card?.info?.name}
+          avgRating={normalCategory?.card?.card?.itemCards[0]?.card?.card?.info?.ratings?.aggregatedRating?.rating}
+          ratingCount={normalCategory?.card?.card?.itemCards[0]?.card?.card?.info?.ratingCount}
+          costForTwo={normalCategory?.card?.card?.itemCards[0]?.card?.card?.info?.defaultPrice/100}
+          discription={normalCategory?.card?.card?.itemCards[0]?.card?.card?.info?.description}
+          imageUrl={normalCategory?.card?.card?.itemCards[0]?.card?.card?.info?.imageId}/>
+
+
+
+
+
+
+
+  // useEffect(()=>{
+  //  const getMenu= async()=>{
+  //    try{
+  //      const data =await fetch (`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.07480&lng=72.88560&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`);
+  //      const json =await data.json();
+  //      setLoading(false)
+  //      setMenuData(json?.data?.cards)
+  //      console.log ("json",json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
+  //    }
+  //  catch(err){
+  //    console.log("menu api error",err)
+  //  }
+  // }
+  //  getMenu();
+  // },[])
+
+  // useEffect(()=>{
+//     const getRestaurats = async()=>{
+//     try{
+//         const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.07480&lng=72.88560&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+//         const json=await data.json();
+//         setloading(false);
+//         setRestaurantData(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+//         setRestaurantCollection(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+//         }
+//     catch(err){
+//         setloading(false);
+//         setisFailed(true);
+//         console.log("Somthing went wrong",err)
+//     }
+// }
+//     getRestaurats();
+// },[])

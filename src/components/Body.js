@@ -1,6 +1,4 @@
 import Carousel from"./Carousel"
-import Filter from "./Filter"
-import Searchbar from "./Searchbar"
 import Cardcontainor from "./Cardcontainor"
 
 const body =() =>{
@@ -12,8 +10,6 @@ const body =() =>{
 		</div>
 		<Carousel/>
 		<div className ="d-flex justify-content-between">
-		<Filter/>
-		<Searchbar/>
 		</div>
 		<Cardcontainor/>
 		</>
