@@ -5,9 +5,12 @@ import Cart from './Cart'
 import Body from './Body'
 import App from '../App'
 import Menu from './Menu'
+import instamart from './Instamart'
 import ErrorPage from './ErrorPage'
+import {lazy,Suspense } from "react"
 
 
+const Instamart =lazy (()=>import("./Instamart"))
 
 const appRouter = createBrowserRouter([
 {
@@ -34,6 +37,10 @@ const appRouter = createBrowserRouter([
       {
       path: "menu/:id",
       element: <Menu/>
+      },
+      {
+      path: "instamart",
+      element: <Suspense><Instamart/></Suspense>
       }
     ]
 }

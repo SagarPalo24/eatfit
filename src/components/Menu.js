@@ -1,14 +1,16 @@
 import { useParams } from "react-router-dom"
-import { useState,useEffect }from "react"
+import { useState }from "react"
 import Resinfo from "./Resinfo"
 import Shimmar from "./shimmer"
-import MenuSection from "./MenuSection"
 import useMenu from "../hooks/useMenu"
+import NormalMenu from "./NormalMenu"
+import NestedMenu from "./NestedMenu"
 
 const Menu=() => {
 	const {id} = useParams();
 	const menuList=useMenu(id);
 	console.log("custome hook",menuList);
+	const [activeIndex,setActiveIndex]= useState(0)
 
 	if (menuList.length===0){
     return(
@@ -40,6 +42,15 @@ const Menu=() => {
 	const{ name, avgRating, totalRatingsString, costForTwoMessage, cuisines, sla, expectationNotifiers }= menuList[2]?.card?.card?.info
 	const{ slaString  }= sla;
 	const{ enrichedText }= expectationNotifiers[0];
+
+	const showDetails= (val)=>{
+			if(activeIndex===val){
+			                   setActiveIndex(-1)
+			                   }
+			else{
+			setActiveIndex(val);
+				}
+	}
 	return(
 	<div className="menu_container p-3">
 	  <div>
@@ -53,68 +64,18 @@ const Menu=() => {
 	  enrihedText={enrichedText}/>
 	  </div>
 		<div className="p-3">
-			{
-				normalMenu.map((normalCategory)=>{
+			{normalMenu.map((normalCategory,index)=>{
 					return(
-					<div>
-						<h5>{normalCategory?.card?.card?.title}</h5>
-						{
-							normalCategory?.card?.card?.itemCards?.map((dish)=>{
-								return(
-								<div>
-									<MenuSection 
-									 isVeg={dish?.card?.info?.isVeg}
-								     name={dish?.card?.info?.name}
-									 costForTwo={dish?.card?.info?.defaultPrice/100 || dish?.card?.info?.price/100}
-									 avgRating={dish?.card?.info?.ratings?.aggregatedRating?.rating}
-									 ratingCount={dish?.card?.info?.ratings?.aggregatedRating?.ratingCount}
-									 discription={dish?.card?.info?.description}
-									 imageUrl={dish?.card?.info?.imageId}
-								    />
-								    <hr/>
-								</div>
-								)
-							})
-						}
-					</div>
+						<NormalMenu normalCollection={normalCategory} isActive={activeIndex===index}
+						toggleFunction={()=>showDetails(index)}/>
 					)
 				})
 			}
 		</div>
 		<div>
-			{
-				nestedMenu.map((nestedCategory)=>{
+			{nestedMenu.map((nestedCategory)=>{
 					return(
-					<div>
-						<h3>{nestedCategory?.card?.card?.title}</h3>
-						{
-							nestedCategory?.card?.card?.categories.map((subCategory)=>{
-								return(
-								<div>
-									<h5>{subCategory?.title}</h5>
-									{
-										subCategory?.itemCards.map((dish)=>{
-											return(
-												<div>
-													<MenuSection 
-														 isVeg={dish?.card?.info?.isVeg}
-													     name={dish?.card?.info?.name}
-														 costForTwo={dish?.card?.info?.defaultPrice/100 || dish?.card?.info?.price/100}
-														 avgRating={dish?.card?.info?.ratings?.aggregatedRating?.rating}
-														 ratingCount={dish?.card?.info?.ratings?.aggregatedRating?.ratingCount}
-														 discription={dish?.card?.info?.description}
-														 imageUrl={dish?.card?.info?.imageId}
-												    />
-												    <hr/>
-												</div>
-											)
-										})
-									}
-								</div>
-								)
-							})
-						}
-					</div>
+					<NestedMenu category={nestedCategory}/>
 					)
 				})
 			}

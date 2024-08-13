@@ -19,13 +19,16 @@ const pureVeg=()=>{
     })
     updater(filterData);
 }
+const reset=()=>{
+	updater(collection)
+}
 
 	return(
 		<div className="container  d-flex gap-3 text-black">
             <button type="button" className="btn btn-outline-success  "onClick={topRating}  >⭐Top Rating</button>
             <button type="button" className="btn btn-outline-success "onClick={fastDelivery} >Fast Delivery</button>
             <button type="button" className="btn btn-outline-success "onClick={pureVeg} >Pure Veg</button>
-            <button type="button" className="btn btn-outline-warning " >Reset</button>
+            <button type="button" className="btn btn-outline-warning " onClick={reset} >Reset</button>
         </div>
 		);
 };

@@ -3,15 +3,19 @@ import { IoIosContact } from "react-icons/io";
 import { MdOutlineAddIcCall } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
 import { Link } from "react-router-dom"
+import useOnline from "../hooks/useOnline"
 
 
-const header =() =>{
+const Header =() =>{
+  const isOnline = useOnline();
+  console.log ("online status", isOnline)
 	return(
 		<>
 		<nav className="navbar navbar-light bg-light shadow-xl  ">
   <div className="container header">
     <Link className="nav-link d-flex" to="">
     <img className="icon" src="https://5.imimg.com/data5/SELLER/Default/2021/6/OJ/KJ/YX/6767130/smart-restaurant-software-500x500.png" width="100px"/>
+    <span>{isOnline? "🟢":"🔴"}</span>
     </Link>
    	<ul className=" bar d-flex gap-6 font-semibold  hover:text-blue">
   <li className=" gap-1 hover:text-sky-800" >
@@ -36,6 +40,11 @@ const header =() =>{
     <IoCartOutline size={20}/>Cart<sub>0</sub>
     </Link>
   </li>
+    <li className="flex hover:text-sky-800">
+    <Link className="nav-link d-flex" to ="/instamart">
+    <IoCartOutline size={20}/>Instamart
+    </Link>
+  </li>
 </ul>
 
   </div>
@@ -45,4 +54,4 @@ const header =() =>{
 		);
 };
 
-export default header;
+export default Header;
