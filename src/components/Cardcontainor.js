@@ -10,7 +10,7 @@ const Cardcontainor =() =>{
     const [restaurantData,setRestaurantData] =useState([]);
     const [restaurantCollection,setRestaurantCollection] =useState([]);
     const resObject=useRestaurant();
-    console.log("resobject",resObject);
+    // console.log("resobject",resObject);
 
 
 if (resObject.loading){

@@ -1,8 +1,23 @@
+import { useSelector } from 'react-redux'
+import MenuSection from "./MenuSection"
+
 const Cart =() =>{
+  const cartItems=useSelector((store)=>store.cart.items);
+    console.log ("cartItems", cartItems)
 	return(
-		<div className="text-center container" > 
-		<h1>this is my Cart</h1>
-		</div>
+		cartItems.map((cartItem)=>{
+			return(
+				<MenuSection
+					isVeg={cartItem?.isVeg}
+					name={cartItem?.name}
+					costForTwo={cartItem?.defaultPrice/100 || cartItem?.price/100}
+					avgRating={cartItem?.ratings?.aggregatedRating?.rating}
+					ratingCount={cartItem?.ratings?.aggregatedRating?.ratingCount}
+					discription={cartItem?.description}
+					imageUrl={cartItem?.imageId}
+				/>
+				)
+		})
 		);
 };
 
