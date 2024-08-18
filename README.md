@@ -271,3 +271,14 @@ return(
 // }
 //     getRestaurats();
 // },[])
+
+
+className="container grid grid-cols-4
+
+mb-3 scale-100 text-decoration-none text-secondary
+
+
+aspect-ratio: 15/9; */
+    /* border-radius: 20px;
+    transform:scale(80%);
+      transition: 0.50s; */

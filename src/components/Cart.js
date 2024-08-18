@@ -7,6 +7,8 @@ const Cart =() =>{
 	return(
 		cartItems.map((cartItem)=>{
 			return(
+				<div>
+				<div>hello</div>
 				<MenuSection
 					isVeg={cartItem?.isVeg}
 					name={cartItem?.name}
@@ -16,6 +18,7 @@ const Cart =() =>{
 					discription={cartItem?.description}
 					imageUrl={cartItem?.imageId}
 				/>
+				</div>
 				)
 		})
 		);

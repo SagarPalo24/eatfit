@@ -34,7 +34,7 @@ if (resObject.isFailed){
             <Filter collection={resObject.masterData} updater={resObject.updater} />
             </div>
             <hr className="container"/>
-            <div className="container grid grid-cols-4">
+            <div className="container grid grid-cols-5 object-cover">
                 {
                     resObject?.resData.length !==0?resObject?.resData.map((restaurant) => {
                     return(

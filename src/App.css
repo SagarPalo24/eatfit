@@ -7,17 +7,18 @@
 	width: 180px;
 }
 .custom-card{
-		width:85%;
-		height: 100%;
+		width:200px;
+		height:320px;
 		word-spacing:normal;
 		overflow: hidden;
 		cursor: pointer;
 }
 
 .custom-card img{
-		aspect-ratio: 2/2;
-		border-radius: 20px;
-		transform:scale(80%);
+		height: 180px;
+		width: 200px;
+		border-radius: 25px;
+		transform:scale(95%);
     	transition: 0.50s;
 }
 
@@ -87,4 +88,10 @@
 	max-width:800px;
 	margin: auto;
 }
-
+.desp{
+		overflow: hidden;
+		display: -webkit-box;
+    	overflow-wrap: break-word;
+		-webkit-line-clamp: 1;
+    	-webkit-box-orient: vertical;
+}

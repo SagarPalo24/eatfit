@@ -10,7 +10,7 @@ const MenuSection =({no,name,avgRating,ratingCount,costForTwo,isVeg,discription,
 				</div>
 				<p>Rs.{costForTwo}</p>
 				{avgRating && <p  className="text-success">⭐{avgRating} <span className="text-secondary">({ratingCount})</span></p>}
-				<p className="text-secondary">{ discription }</p>
+				<p className="desp">{ discription }</p>
 			</div>
 			<div className="relative h-full w-[20%]" >
 				<img className= "img_res" src={IMG_URL+ imageUrl}/>
