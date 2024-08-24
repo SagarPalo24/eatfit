@@ -19,7 +19,7 @@ const Header =() =>{
     <img className="icon" src="https://5.imimg.com/data5/SELLER/Default/2021/6/OJ/KJ/YX/6767130/smart-restaurant-software-500x500.png" width="100px"/>
     <span>{isOnline? <IoMdRadioButtonOn  color="green"/>: <IoMdRadioButtonOn  color="red" />}</span>
     </Link>
-   	<ul className=" bar d-flex gap-6 font-semibold  hover:text-blue">
+   	<ul className=" bar d-flex gap-2 font-semibold  hover:text-blue">
   <li className=" gap-1 hover:text-sky-800" >
     <Link className="nav-link d-flex" to="">
     <MdOutlineAddHome size={20}/>

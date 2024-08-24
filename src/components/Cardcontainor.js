@@ -29,12 +29,12 @@ if (resObject.isFailed){
 
     return(
         <div>
-            <div className="flex container gap-20">
+            <div className="flex flex-col sm:flex-row container gap-20">
             <Searchbar collection={resObject.masterData} updater={resObject.updater}/>
             <Filter collection={resObject.masterData} updater={resObject.updater} />
             </div>
             <hr className="container"/>
-            <div className="container grid grid-cols-5 object-cover">
+            <div className="container flex-col sm:flex-row  grid grid-cols-5 object-cover ">
                 {
                     resObject?.resData.length !==0?resObject?.resData.map((restaurant) => {
                     return(

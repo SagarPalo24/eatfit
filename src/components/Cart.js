@@ -8,7 +8,6 @@ const Cart =() =>{
 		cartItems.map((cartItem)=>{
 			return(
 				<div>
-				<div>hello</div>
 				<MenuSection
 					isVeg={cartItem?.isVeg}
 					name={cartItem?.name}
@@ -25,3 +24,5 @@ const Cart =() =>{
 };
 
 export default Cart;
+
+

@@ -14,6 +14,7 @@ const Carousel =() =>{
 	useEffect(()=>{
 		fetchCategory();
 	},[])
+
  
  function handleEnd(){
  		data >= 124 ? "" : setData((prev)=> prev+31)

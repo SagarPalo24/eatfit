@@ -20,7 +20,7 @@ const NormalMenu =({normalCollection,isActive,toggleFunction, isNested})=>{
 		  </div>
 			{isNested ?normalCollection?.itemCards?.map((dish)=>{
 				return(
-					 showList &&<div>
+					 showList && <div>
 						<MenuSection 
 							isVeg={dish?.card?.info?.isVeg}
 						    name={dish?.card?.info?.name}
