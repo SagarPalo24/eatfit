@@ -27,7 +27,7 @@ const Carousel =() =>{
 		<div className="w-full " > 
 		<div className="w-[80%] mx-auto  mt-2 mb-2 overflow-hidden">
 		<div className="flex justify-between mt-2 ">
-		  <h2>What's in your Mind ?</h2>
+		  <h2>What in your Mind ?</h2>
 		  <div className="flex gap-2">
 		  		<div onClick={handleStart}className={` cursor-pointer rounded-full w-8 h-8 flex justify-center item-center ` + (data <= 0 ? "bg-gray-100":"bg-gray-200")}>
 		  		<FaArrowLeft className={` text-xl mt-1 `+ (data <= 0 ? "text-gray-200":"text-gray-800")}/></div>
