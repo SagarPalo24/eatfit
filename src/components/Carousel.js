@@ -17,10 +17,10 @@ const Carousel =() =>{
 
  
  function handleEnd(){
- 		data >= 124 ? "" : setData((prev)=> prev+31)
+ 		 setData((prev)=> prev+31)
  }
   function handleStart(){
- 		data <= 0 ? "" : setData((prev)=> prev-31)
+ 		 setData((prev)=> prev-31)
  }
 	
 	return(
