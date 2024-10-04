@@ -25,7 +25,7 @@ const reset=()=>{
 }
 
 	return(
-		<div className="container  d-flex gap-3 text-black ">
+		<div className="container  d-flex gap-3 text-black rounded-lg">
             <button type="button" className="btn btn-outline-success d-flex  "onClick={topRating}  ><FaStar color="yellow"/>Top Rating</button>
             <button type="button" className="btn btn-outline-success  "onClick={fastDelivery} >Fast Delivery</button>
             <button type="button" className="btn btn-outline-success "onClick={pureVeg} >Pure Veg</button>

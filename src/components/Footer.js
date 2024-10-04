@@ -30,7 +30,7 @@ const items =[
 const footer =() =>{
 	return(
         <>
-          <div className="w-full mt-24 bg-slate-900  text-gray-300 py-y px-2">
+          <div className="w-full bg-slate-900  text-gray-300 py-y px-2">
               <div className="max-w-[full] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8">
                 <ul className="py-1 text-gray-500 hover:text-white cursor-pointer">
                     <h5 className="text-white">SOLUTIONS</h5>

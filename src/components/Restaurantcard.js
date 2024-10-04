@@ -9,9 +9,10 @@ import { CiLocationOn } from "react-icons/ci";
 const Resturantcard =({cloudinaryImageId,name,avgRating,sla,cuisines,areaName,id,aggregatedDiscountInfoV3})  =>{
 	return(
 		<Link to={`/menu/${id}`} className="custom-card mb-3  text-decoration-none text-secondary hover:scale-95 relative ">
-			<div className="mb-2 hover:shadow-blue-500/100"> 
+			<div className="mb-2 hover:shadow-blue-500/100 relative"> 
 				<img  className="bg-gradient-to-t from-black  from-4% to-transparent to-40% border-2xl " src={IMG_URL+cloudinaryImageId}/>
-				<div className="absolute bottom-40 ml-3 mt-100 text-white text-xl font-bold">{aggregatedDiscountInfoV3?.header + aggregatedDiscountInfoV3?.subHeader}</div>
+				<div className='absolute inset-0 bg-gradient-to-t from-black from-3% to-transparent to-70% rounded-2xl'></div>
+				<div className="absolute bottom-1 ml-3 mt-100 text-white text-xl font-bold">{aggregatedDiscountInfoV3?.header + aggregatedDiscountInfoV3?.subHeader}</div>
 			</div>
 			<div className="px-2">
 				<div className="resname font-semibold text-[1.5xl] text-black">{name} </div>

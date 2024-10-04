@@ -103,12 +103,13 @@
 .contactform{
 	max-width: 600px;
 	width: 100%;
-	background: rgb(0, 0, 31);
+/* 	background: url('https://media.istockphoto.com/id/1071414426/photo/wooden-tabletop-over-defocused-kitchen-background.jpg?s=1024x1024&w=is&k=20&c=cwysJSpSNfCS9FGx-pEeRXl4KW1YVksgNzJ4MahA7Fo='); */
 	padding: 25px 25px 30px;
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, -1);
 	color: #333;
 	margin: 25px;
+	backdrop-filter: blur(10px);
 }
 
 form h2 {
@@ -157,3 +158,87 @@ form .input-box{
 .btn:hover{
 	background: #624ec6;
 }
+
+.bgcontact{
+    background: url('./assets/img/bg-1.jpg');
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.about-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px; /* Adjust as needed */
+}
+
+.about-content {
+    text-align: center;
+}
+
+.food-image {
+	margin: auto;
+    width: 400px;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.mission,
+.features,
+.contact-info {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.feature-item {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.feature-item h3 {
+    margin-top: 10px;
+}
+
+.feature-item p {
+    color: #666;
+}
+
+h1, h2 {
+    color: #4a4a4a;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+

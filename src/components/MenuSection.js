@@ -14,7 +14,8 @@ const MenuSection =({no,name,avgRating,ratingCount,costForTwo,isVeg,discription,
 			</div>
 			<div className="relative h-full w-[20%]" >
 				<img className= "img_res" src={IMG_URL+ imageUrl}/>
-				<button className="bg-white rounded-xl absolute bottom-[-20px] left-5 text-lg text-green-700 font-bold px-4 py-2 drop-shadow" onClick={handleAdd}>ADD</button>
+				<div className='absolute inset-0 bg-gradient-to-t from-black from-3% to-transparent to-40% rounded-2xl'></div>
+				<button className="bg-white rounded-xl absolute bottom-[-20px] left-5 text-lg text-green-700 font-bold px-4 py-2 drop-shadow " onClick={handleAdd}>ADD</button>
 			</div>
 		</div>
 		
