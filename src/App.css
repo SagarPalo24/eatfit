@@ -240,5 +240,8 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.footer{
+	background: url('./assets/img/cart-2.jpg');
+}
 
 

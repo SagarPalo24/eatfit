@@ -7,6 +7,7 @@ const body =() =>{
 		<Carousel/>
 		<div className ="d-flex justify-content-between">
 		</div>
+		
 		<Cardcontainor/>
 		</>
 		);

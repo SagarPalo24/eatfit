@@ -15,7 +15,6 @@ const Carousel =() =>{
 		fetchCategory();
 	},[])
 
- 
  function handleEnd(){
  		 setData((prev)=> prev+31)
  }

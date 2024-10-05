@@ -14,7 +14,7 @@ const Header =() =>{
 	return(
 		<>
 		<nav className="navbar navbar-light bg-light shadow-xl  ">
-  <div className="container header ">
+  <div className="container header">
     <Link className="nav-link d-flex" to="">
     <img className="icon" src="https://5.imimg.com/data5/SELLER/Default/2021/6/OJ/KJ/YX/6767130/smart-restaurant-software-500x500.png" width="100px"/>
     <span>{isOnline? <IoMdRadioButtonOn  color="green"/>: <IoMdRadioButtonOn  color="red" />}</span>
@@ -42,8 +42,8 @@ const Header =() =>{
     </Link>
   </li>
     <li className=" hover:text-sky-800">
-    <Link className="nav-link " to ="/instamart">
-    Instamart
+    <Link className="nav-link " to ="/login">
+    Login
     </Link>
   </li>
 </ul>

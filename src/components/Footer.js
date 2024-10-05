@@ -30,7 +30,7 @@ const items =[
 const footer =() =>{
 	return(
         <>
-          <div className="w-full bg-slate-900  text-gray-300 py-y px-2">
+          <div className=" footer w-full   text-gray-300 py-y px-2">
               <div className="max-w-[full] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8">
                 <ul className="py-1 text-gray-500 hover:text-white cursor-pointer">
                     <h5 className="text-white">SOLUTIONS</h5>
@@ -82,8 +82,7 @@ const footer =() =>{
                 </div>
                
                 </div>
-              </div>
-               <div className="flex flex-col max-w-full px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500 bg-slate-900 ">
+                <div className="  flex flex-col max-w-full px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500  ">
                     <p className="py-4">
                         2024 @smart restaurants, LLC. All rights reserved.
                         </p>
@@ -94,6 +93,8 @@ const footer =() =>{
                             })
                         }
                 </div>
+              </div>
+               
           </div>
         </>
         );
